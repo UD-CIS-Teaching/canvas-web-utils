@@ -1,0 +1,32 @@
+{
+  "name": "canvas-web-utils",
+  "version": "1.0.0",
+  "description": "Tools for controlling Canvas online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --mode=development --config webpack.config.dev.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UD-CIS-Teaching/canvas-web-utils.git"
+  },
+  "author": "acbart@udel.edu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UD-CIS-Teaching/canvas-web-utils/issues"
+  },
+  "homepage": "https://github.com/UD-CIS-Teaching/canvas-web-utils#readme",
+  "devDependencies": {
+    "@types/jquery": "^3.3.33",
+    "@types/jqueryui": "^1.12.10",
+    "fs": "0.0.1-security",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-userscript": "^2.5.1"
+  }
+}
