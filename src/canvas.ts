@@ -50,9 +50,7 @@ function chunk<T>(anArray: T[], chunkSize: number): T[][] {
 
 function delay(t: number, i: any) {
     return new Promise((resolve, reject) => {
-        console.log("WAIT??", i, performance.now());
         setTimeout(() => {
-            console.log("I DID MY WAITING", i, performance.now());
             resolve();
         }, t);
     });

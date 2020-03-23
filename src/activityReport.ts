@@ -86,12 +86,9 @@ function makeStudentReport(students: User[], staff: User[], assignments: Assignm
     setStatus("Downloaded submissions");
     let thresholdDate = $("#cwu-activity-report-control-start").val();
     // Determine total submittable assignments
-    console.log(students);
-    console.log(subs);
     // Determine recently submitted assignments
     // Determine total submitted assignments
     let totalAssignments: number = assignments.filter((a: Assignment) => a.published).length;
-    console.log("TA", totalAssignments);
     let recentSubmissions: UserMap = {};
     let totalSubmissions: UserMap = {};
     students.forEach((student: User) => {

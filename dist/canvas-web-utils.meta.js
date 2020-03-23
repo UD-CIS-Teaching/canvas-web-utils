@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        canvas-web-utils
-// @version     1.0.0
+// @version     1.0.1
 // @author      acbart@udel.edu
 // @description Tools for controlling Canvas online
 // @homepage    https://github.com/UD-CIS-Teaching/canvas-web-utils#readme
