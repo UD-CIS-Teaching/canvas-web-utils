@@ -25,7 +25,7 @@ The Activity Report allows you to check each student and TA for recent activity.
 1. Visit the course you would like to generate a report for (e.g., go to the course's front page).
 2. Click the "Activity Report" button at the bottom of the left-hand Course Navigation menu.
 
-![Activity Report Button in Course Navigation Menu](docs/activity_report/activity_report_start.png | width=100px)
+<img src="docs/activity_report/activity_report_start.png" title="Activity Report Button in Course Navigation Menu" width="300px">
 
 3. The Activity Report dialog box appears.
 
