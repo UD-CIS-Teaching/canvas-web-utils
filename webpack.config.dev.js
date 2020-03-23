@@ -30,7 +30,8 @@ module.exports = (env, options) => {
             new WebpackUserscript({
                 headers: {
                     version: dev ? `[version]-build.[buildNo]` : `[version]`,
-                    match: "https://*.instructure.com/courses/*"
+                    match: "https://*.instructure.com/courses/*",
+                    grant: "none"
                 }
             })
         ],

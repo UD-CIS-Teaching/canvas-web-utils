@@ -1,4 +1,4 @@
-export function startDialog(title: string) {
+export function startDialog(title: string, body: string) {
     if ($('#dialog').length == 0) {
         $(document.body).append('<div title="' + title +
             '" id="dialog"></div>');
@@ -11,7 +11,7 @@ export function startDialog(title: string) {
         height: document.documentElement.clientHeight - 100
     });
     $("#dialog").dialog("open");
-    $('#dialog').html("<span>Loading, please wait.</span>");
+    $('#dialog').html(body);
 
 }
 
