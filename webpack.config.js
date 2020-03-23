@@ -1,14 +1,32 @@
+const path = require('path');
 const WebpackUserscript = require('webpack-userscript');
 
 module.exports = {
-    plugins: [
-        new WebpackUserscript()
-    ],
-    node: {
-        child_process: 'empty',
-        fs: 'empty',
-        crypto: 'empty',
-        net: 'empty',
-        tls: 'empty'
+    mode: 'production',
+    entry: path.resolve(__dirname, 'src', 'index.ts'),
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+        ],
     },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js'],
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'canvas-web-utils.user.js'
+    },
+    plugins: [
+        new WebpackUserscript({
+            headers: {
+                version: `[version]`,
+                match: "https://*.instructure.com/courses/*",
+                grant: "none"
+            }
+        })
+    ]
 }
