@@ -37,6 +37,13 @@ The Activity Report allows you to check each student and TA for recent activity.
 
 ![Activity Report In Progress](docs/activity_report/activity_report_progress.png)
 
-6. Once the report is fully loaded, you can view the student's activity at the top and the staff's activity at the bottom. The **Submitted Recently** column shows the number of assignments that were submitted after the datetime in the "Completed since" box. The **Total Unsubmitted** shows how many published assignments this student is still responsible for. You can click on any of the column headers to sort the table by that header (click once for ascending, twice for descending).
+6. Once the report is fully loaded, you can view the student's activity at the top. You can click on any of the column headers to sort the table by that header (click once for ascending, twice for descending).
 
-7. The "Staff Grading" report is at the bottom. The **Graded Recently** column shows the number of assignments had a grade entered by that staff member after the datetime in the "Completed since" box. The **Graded Total** shows how many published assignments this staff member has entered a grade for. The system treats anyone with the "Instructor" and "TA" roles as staff members. This table cannot be resorted.
+  * The **Submitted Recently** column shows the number of assignments that were submitted after the datetime in the "Completed since" box.
+  * The **Total Unsubmitted** shows how many published assignments this student is still responsible for. 
+
+7. The "Staff Grading" report is at the bottom. The system treats anyone with the "Instructor" and "TA" roles as staff members. This table cannot be resorted.
+
+  * The **Graded Recently** column shows the number of assignments had a grade entered by that staff member after the datetime in the "Completed since" box.
+  
+  * The **Graded Total** shows how many published assignments this staff member has entered a grade for. 
