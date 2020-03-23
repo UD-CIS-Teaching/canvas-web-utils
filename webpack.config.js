@@ -6,6 +6,7 @@ const RAW_DOWNLOAD_URL = "https://github.com/UD-CIS-Teaching/canvas-web-utils/ra
 module.exports = {
     mode: 'production',
     entry: path.resolve(__dirname, 'src', 'index.ts'),
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
