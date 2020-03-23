@@ -1,6 +1,8 @@
 const path = require('path');
 const WebpackUserscript = require('webpack-userscript');
 
+const RAW_DOWNLOAD_URL = "https://github.com/UD-CIS-Teaching/canvas-web-utils/raw/master/dist/canvas-web-utils.user.js";
+
 module.exports = {
     mode: 'production',
     entry: path.resolve(__dirname, 'src', 'index.ts'),
@@ -26,8 +28,8 @@ module.exports = {
                 version: `[version]`,
                 match: "https://*.instructure.com/courses/*",
                 grant: "none",
-                updateURL: "https://github.com/UD-CIS-Teaching/canvas-web-utils/blob/master/dist/canvas-web-utils.user.js",
-                downloadURL: "https://github.com/UD-CIS-Teaching/canvas-web-utils/blob/master/dist/canvas-web-utils.user.js"
+                updateURL: RAW_DOWNLOAD_URL,
+                downloadURL: RAW_DOWNLOAD_URL
             }
         })
     ]
