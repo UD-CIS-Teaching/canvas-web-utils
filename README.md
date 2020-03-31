@@ -14,6 +14,18 @@ I develop on Chrome. I make no claims that it will work on anything else. It pro
 2. Visit the install link for the [Canvas-Web-Utils userscript](https://github.com/UD-CIS-Teaching/canvas-web-utils/raw/master/dist/canvas-web-utils.user.js).
 3. You should be prompted to install the extension, which you should do.
 
+Note: You may need to modify the script to match your Canvas site.
+ 
+## Modifying for your Canvas site
+
+1. Go to TamperMonkey's dashboard
+2. Click on Edit (under Actions column)
+3. Go to the Settings tab
+4. Under Includes/Excludes, go to User Includes and press "Add..."
+5. In the dialog box, enter the url of your canvas site. You can use regular expressions.
+
+<img src="docs/adding_url/adding_canvas_url.png" title="Adding Canvas URL to make it work on your institution's Canvas site">
+ 
 # Usage
 
 Currently, there's only one tool. But we can add more!
