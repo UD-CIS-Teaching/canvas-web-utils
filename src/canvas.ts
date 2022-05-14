@@ -49,14 +49,14 @@ function chunk<T>(anArray: T[], chunkSize: number): T[][] {
 }
 
 function delay(t: number, i: any) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         setTimeout(() => {
             resolve();
         }, t);
     });
 }
 
-function serial(callbacks: any[], i: number = 0): Promise<any> {
+function serial(callbacks: any[], i: number = 0): Promise<void> {
     if (i < callbacks.length) {
         return callbacks[i]().then(() => serial(callbacks, i + 1));
     } else {
