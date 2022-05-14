@@ -1,7 +1,6 @@
 import { loadReport } from "./activityReport";
 
-$(document).ready(function () {
-
+$(document).on('ready', function () {
     loadReport();
 
 });
