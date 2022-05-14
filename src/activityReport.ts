@@ -6,7 +6,7 @@ import {
 
 const ACTIVITY_REPORT_BUTTON = `
 <li class='section'>
-    <button title='Activity Report' class='btn' id='cwu-activity-report-load'>Activity Report</button>
+    <button title='Activity Report' class='btn' id='cwu-activity-report-load'>Grading Activity Report</button>
 </li>
 `;
 
