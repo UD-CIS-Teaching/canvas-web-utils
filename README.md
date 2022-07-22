@@ -1,3 +1,5 @@
+**THIS REPO IS NOW DEPRECATED. CHECK OUT THE <https://github.com/UD-CIS-Teaching/more-canvas-tools/> repo instead!**
+
 # canvas-web-utils
 
 A simple collection of web utilities that augment the Instructure Canvas site. None of these tools are officially created or maintained by Instructure, they're just helpful bits of functionality that I wanted.
